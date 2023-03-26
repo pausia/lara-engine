@@ -14,6 +14,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,7 +52,7 @@
                 <!-- Register -->
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="mb-3 text-center">Welcome to Kuncup Bahari</h4>
+                        <h4 class="mb-3 text-center">Welcome to Jaladri Nusantara</h4>
 
                         <form id="formAuthentication" class="mb-3" action="{{ route('login.create') }}"
                             method="POST">
