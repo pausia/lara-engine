@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Daftar;
+use App\Http\Controllers\PelaporController;
 use App\Http\Controllers\Superadmin\SuperAdmin;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Superadmin\SaUserController;
@@ -26,4 +27,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('akses', HakAksesController::class);
     Route::resource('createTable', CreateTableController::class);
     Route::resource('tes', TesController::class);
+    Route::get('/home', [PelaporController::class, 'home'])->name('home');
+    Route::get('/pelapor', [PelaporController::class, 'pelapor'])->name('pelapor');
+    Route::post ('/home/store',[PelaporController::class, 'store']);
 });
